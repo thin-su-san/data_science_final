@@ -1,0 +1,16 @@
+[
+    {
+        "cluster": 0, 
+        "colleges": [
+            {"name": "Harvard University", "GPA": 3.9, "Happiness Grade": "A"},
+            {"name": "Brown University", "GPA": 3.6, "Happiness Grade": "A+"}
+        ]
+    },
+    {
+        "cluster": 1, 
+        "colleges": [
+            {"name": "Boston University", "GPA": 3.9, "Happiness Grade": "A"},
+            {"name": "Cornell University", "GPA": 3.6, "Happiness Grade": "A+"}
+        ]
+    }
+]
