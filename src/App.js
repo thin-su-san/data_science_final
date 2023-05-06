@@ -10,13 +10,10 @@ function App() {
   const [search, setSearch] = useState('');
   const [colleges, setColleges] = useState([]);
   const cluster = Object.values(COLLEGE_DATA).find(e => e.name === search);
-  // const colleges = Object.values(CLUSTER_DATA).find(e => e.cluster === cluster.cluster);
 
   const click = () => {
-    alert(search)
     const collegeData = Object.values(CLUSTER_DATA).find(e => e.cluster === cluster.cluster)
     setColleges(collegeData)
-    // setColleges(collegeData.colleges)
   }
   const onSearchChange = event => {
     setSearch(event.target.value)
@@ -28,8 +25,11 @@ function App() {
 
   return (
     <div className="App">
-      <input onChange={onSearchChange} value={search}/>
-      <button onClick={click}>Search</button>
+      <div className="searchBar">
+        <input onChange={onSearchChange} value={search}/>
+        <button onClick={click}>Search</button>
+      </div>
+      
       {/* <BasicTable colleges={colleges}/> */}
 
       <div className="container mt-5">
@@ -37,6 +37,7 @@ function App() {
           columns={COLUMNS}
           data={colleges.colleges}
           fixedHeader
+          pagination
         ></DataTable>
       </div>
       
