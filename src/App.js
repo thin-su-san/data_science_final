@@ -25,12 +25,19 @@ function App() {
 
   return (
     <div className="App">
+      <div className="intro">
+        <p>Hi! This website helps you find universities similar to the one you input in the box below. For example, to search for universities similar to Brown, please put in 'Brown University'.</p>
+      </div>
+
       <div className="searchBar">
         <input onChange={onSearchChange} value={search}/>
-        <button onClick={click}>Search</button>
+        <button class="button-19" role="button" onClick={click}>Search</button>
+
+        {/* <button className='button-19' onClick={click}>Search</button> */}
       </div>
       
       {/* <BasicTable colleges={colleges}/> */}
+      {/* Brown University */}
 
       <div className="container mt-5">
         <DataTable
