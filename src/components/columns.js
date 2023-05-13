@@ -38,11 +38,6 @@ export const COLUMNS = [
         sortable: true
     },
     {
-        name: 'GPA',
-        selector: row => row.GPA,
-        sortable: true
-    },
-    {
         name: 'Happiness Grade',
         selector: row => row.HappinessGrade,
         sortable: true,
@@ -52,5 +47,20 @@ export const COLUMNS = [
         name: 'Happiness Rank',
         selector: row => row.HappinessRank,
         sortable: true
-    }
+    },
+    {
+        name: 'GPA',
+        selector: row => row.GPA,
+        sortable: true
+    },
+    {
+        name: 'Admission Rate',
+        selector: row => row.AdmissionRate,
+        sortable: true
+    },
+    {
+        name: 'City',
+        selector: row => row.City,
+        sortable: true
+    },
 ];
